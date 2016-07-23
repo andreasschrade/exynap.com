@@ -1,5 +1,288 @@
-<html>
-<body>
-Hello there!
-</body>
+<!DOCTYPE HTML>
+<!--
+	Alpha by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>	
+  <head>		
+    <title>Exynap
+    </title>		
+    <meta charset="utf-8" />		
+    <meta name="viewport" content="width=device-width, initial-scale=1" />		
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->		
+    <link rel="stylesheet" href="assets/css/main.css" />		
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->	
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  </head>	
+  <body class="landing">		
+    <div id="page-wrapper">			
+      <!-- Header -->				
+      <header id="header" class="alt">					<h1>
+          <a href="#">Exynap</a></h1>					
+        <nav id="nav">						
+          <ul>							
+           					
+            <li>
+            <a href="#installation">Installation</a>
+            </li>
+           <li>
+            <a href="#first-steps">First Steps</a>
+            </li>
+                   <li>
+            <a href="#examples">Examples</a>
+            </li>    
+                        <li>
+            <a href="#support-and-contact">Support & Contact</a>
+            </li>
+                       <li>
+            <a href="#about">About</a>
+            </li>
+          </ul>					
+        </nav>				
+      </header>			
+      <!-- Banner -->				
+      <section id="banner">					<h2>Exynap</h2>					
+        <p>Easier Android Development
+        </p>
+        				
+        <ul class="actions">										
+          <li>
+          <a href="#main" class="button">Learn More</a>
+          </li>					
+        </ul>				
+      </section>			
+      <!-- Main -->				
+      <section id="main" class="container">					
+        <section class="box special">						
+          <header class="major">							<h2>Exynap is an Android Studio plugin   							<br />							that helps you to find and implement the required code</h2>					
+            <!--		<p>Blandit varius ut praesent nascetur eu penatibus nisi risus faucibus nunc ornare<br />
+            							adipiscing nunc adipiscing. Condimentum turpis massa.</p>-->						
+          </header>						
+          <span class="image featured">
+            <img src="images/anim01.gif" alt="" />
+          </span>					
+        </section>					
+        <section class="box special features">						
+          <div class="features-row">							
+            <section>								
+              <span class="major accent2">
+              </span>								<h3>Just type whatever you are looking for</h3>								
+              <p>You only have to formulate a command, pick one suggestion and press Enter.
+              </p>							
+            </section>							
+            <section>								
+              <span class="major  accent3">
+              </span>								<h3>Easy to use</h3>								
+              <p>You do not have to remember tons of shortcuts or Live Template abbrevations. There is only one shortcut to remember (Ctrl + R). Nothing else.
+              </p>							
+            </section>						
+          </div>						
+          <div class="features-row">							
+            <section>								
+              <span class="major  accent4">
+              </span>								<h3>Ready to use within minutes</h3>								
+              <p>Just download the plugin from the plugin repository and start. No sign up required.
+              </p>							
+            </section>							
+            <section>								
+              <span class="major accent5">
+              </span>								<h3>Privacy guaranteed</h3>								
+              <p>A „Data Privacy Monitor“ shows you every data that has been submitted since Android Studio start. Exynap will never send implementation details, code or something project related to the backend.
+              </p>							
+            </section>						
+          </div>            					
+        </section>           	
+                            
+        <div class="row">						
+          <div class="12u">							
+            <!-- Lists -->								
+            <section class="box">
+            <h3 id="installation">Installation</h3>							 										 										 											
+              <ol>												
+                <li>Open Android Studio
+                </li>												
+                <li>Open the Settings dialog and select „Plugins“ in the left-hand pane
+                </li>												
+                <li>Click „Browse repositories“ and enter „Exynap“ in the search field.
+                </li>												
+                <li>Select „Exynap“ and click on „Install plugin“
+                </li>												
+                <li>Confirm your intention to install Exynap and restart Android Studio
+                </li>	 											
+              </ol>                      
+              <p>                       After the restart of Android Studio, you will see a „Quick Start Guide“ dialog. Please follow this short tutorial. It will help you to understand Exynap, so you can be more productive. Please do also take a look at the following, more detailed introduction to Exynap.                       
+              </p>									                 								
+            </section>						
+          </div>					
+        </div>                        
+        
+        <div class="row">						
+          <div class="12u">							
+            <!-- Lists -->								
+            <section class="box">
+            <h3 id="first-steps">First Steps</h3>							 										 										 											           
+             <p>When using Exynap, the first thing you have to do is to place your cursor inside the Java method where you want to insert the code.<br \>
+             In most cases it makes sense to place the cursor in an empty line.<br \><br \>
+           
+             There are only two cases when Exynap does not require an empty line:
+             <br \><u>Case #1:</u> When the selected variable should be used for <i>instance method calls:</i>.	
+             <span class="image fit">
+            <img src="images/anim03.gif" alt="" />    </p>	
+          </span>				
+             <p><u>Case #2:</u> When the evaluated result of Exynap should be <i>assigned to a variable:</i>
+             <span class="image fit">
+            <img src="images/anim04.gif" alt="" />
+          </span>	</p>
+             <p><b>In every other case has the cursor to be placed in an empty row!</b> (A future release will support insertion inside statements)  <br \><br \>
+If a smart code insertion needs further input, Exynap will automatically place the cursor to the position that requires your input. Just type the value you want and press „Tab“. If you do not want to fill the placeholder you can press „Esc“. Exynap has adopted the behaviour of Intellij Live Templates.</p>							                 								
+           
+             <p style="margin-bottom: 0.5em">It is absolutely necessary that you enter a command (e.g. „set repeating alarm“) and not a common search query (e.g. „how to set a repeating alarm“) in the input box.<br \> <br \><strong><u>Important:</u> A command does always start with a verb!</strong><br \> Examples:</p>
+            
+             <ul>
+             <li><i>hide</i> softkeyboard</li>
+             <li><i>create</i> time picker dialog</li>
+             <li><i>set</i> Actionbar title</li>
+             </ul>
+             <p>If your command (e.g. „calculate the answer of life“) can not be interpreted by Exynap, you can press „Ctrl + Enter“ to trigger a Google search.
+             Exynap helps you with the usage of the Android platform API. External libraries and the "core" Java API are not supported yet.<br \>
+             You can always undo a code insertion by using the regular undo shortcut (Ctrl + Z)</p>
+            </section>						
+          </div>					
+        </div>                        
+        
+         <div class="row">						
+          <div class="12u">							
+            								
+            <section class="box">
+            <h3 id="examples">Examples</h3>							 										 										 											           
+             <p>The following table shows a few examples to give you an overview about the possibilities of Exynap:</p>
+             
+             
+             <div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Command</th>
+													<th>Result</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>create alert dialog</td>
+													<td>Creates a new AlertDialog</td>
+												</tr>
+												<tr>
+													<td>instantiate TextView</td>
+													<td>Instantiates a TextView object via code</td>
+					
+												</tr>
+												<tr>
+													<td>bind view</td>
+													<td>Binds the selected XML layout file (either native Android binding or via Butterknife)</td>
+										
+												</tr>
+												<tr>
+													<td>hide keyboard</td>
+													<td>hides the opened keyboard</td>
+												
+												</tr>
+												<tr>
+													<td>get preferences</td>
+													<td>Get an instance of SharedPreferences</td>
+												
+												</tr>
+                        			<tr>
+													<td>put string to SharedPreferences </td>
+													<td>To write a String into SharedPreferences</td>
+												
+												</tr>
+                        			<tr>
+													<td>create new Activity</td>
+													<td>To create a new subclass of Activity</td>
+												
+												</tr>
+                        	<tr>
+													<td>Create new Adapter</td>
+													<td>To create a simple Adapter stub</td>
+												
+												</tr>
+											</tbody>
+										
+										</table>
+									</div>
+             
+             </section>						
+          </div>					
+        </div>       
+        
+        
+        
+                <div class="row">						
+          <div class="12u">							
+            <!-- Lists -->								
+            <section class="box">
+            <h3 id="support-and-contact">Support & Contact</h3>							 										 										 											           
+             <p>Please use the <a href="https://plus.google.com/communities/112356632473270015225">Exynap Google+ community</a> for bug reports and feature requests.<br \>You can also write me an e-mail: contact&nbsp;║at║&nbsp;exynap.com (<a href="https://pgp.mit.edu/pks/lookup?op=get&search=0x99D60B73E53E5711" target="_blank">PGP Key</a>)</p>
+            </section>						
+          </div>   </div>
+        
+      <div class="row">						
+          <div class="12u">							
+            <!-- Lists -->								
+            <section class="box">
+            <h3 id="about">About</h3>							 										 										 											           
+             <p>Exynap has the vision to make software development easier and faster. It has been developed by Andreas Schrade.<br \>A guy who loves Android, A.I., smart technology and minimalsm.</p>
+             <p>The next big release of Exynap will contain the flux capacitor module which will skyrocket the experience of Exynap even more.<br \>So, stay tuned and follow the progress.</p>
+            </section>						
+          </div>
+        </div>	
+        </section>
+      <!-- Footer -->				
+      <footer id="footer">					
+        <ul class="icons">						
+          <li>
+          <a href="https://twitter.com/exynap_app" class="icon fa-twitter">
+            <span class="label">Twitter
+            </span></a>
+          </li>						
+          <li>
+          <a href="https://plus.google.com/communities/112356632473270015225" class="icon fa-google-plus">
+            <span class="label">Google+
+            </span></a>
+          </li>					
+        </ul>					
+        <ul class="copyright">						
+          <li>&copy; Andreas Schrade
+          </li>
+         		
+          <li><a href="privacy.html">Privacy|Datenschutz</a></li>
+          <li><a href="disclosure.html">Disclosure|Impressum</a></li>	
+          <li><a href="license.pdf">Software License</a></li>	
+           <li>Design by 
+          <a href="http://html5up.net">HTML5 UP</a>
+          </li>		
+        </ul>				
+      </footer>		
+    </div>		
+    <!-- Scripts -->			
+<script src="assets/js/jquery.min.js"></script>			
+<script src="assets/js/jquery.dropotron.min.js"></script>			
+<script src="assets/js/jquery.scrollgress.min.js"></script>			
+<script src="assets/js/skel.min.js"></script>			
+<script src="assets/js/util.js"></script>			
+    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->			
+<script src="assets/js/main.js"></script>	
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-81220454-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </body>
 </html>

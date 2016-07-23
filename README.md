@@ -1,1 +1,1 @@
-# exynap.com    WIP2
+# exynap.com
