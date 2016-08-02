@@ -3651,6 +3651,7 @@
 				}
 
 	}
+  
 
 /* Mobile (Portrait) */
 
@@ -3759,3 +3760,8 @@
 			}
 
 	}
+  
+  h2 sup{
+  font-size:0.5em; opacity:0.8;
+  
+  }
