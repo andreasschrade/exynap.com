@@ -14,6 +14,18 @@
     <link rel="stylesheet" href="assets/css/main.css" />		
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->	
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script type="text/javascript">
+ 
+document.addEventListener("DOMContentLoaded", function(event) {
+ var isMac = navigator.platform.toUpperCase().indexOf('MAC')>=0;
+ if(isMac){
+ var shortcutAbbrv =  document.getElementsByClassName("actionShortcut");
+    [].forEach.call(shortcutAbbrv, function (el) { el.innerHTML = "Cmd";});
+ }
+});
+</script>
+ 
+
 
   </head>	
   <body class="landing">		
@@ -75,7 +87,7 @@
             <section>								
               <span class="major  accent3">
               </span>								<h3>Easy to use</h3>								
-              <p>Remembering tons of shortcuts or Live Template abbreviations is passé. There is only one shortcut you need (Ctrl + Shift + D). Nothing else.
+              <p>Remembering tons of shortcuts or Live Template abbreviations is passé. There is only one shortcut you need (<span class="actionShortcut">Ctrl</span> + Shift + D). Nothing else.
               </p>							
             </section>						
           </div>						
@@ -144,10 +156,10 @@ If the inserted code needs further input, Exynap will automatically place the cu
              <li><i>create</i> time picker dialog</li>
              <li><i>set</i> Actionbar title</li>
              </ul>
-             <p>If your command (e.g. “calculate the answer of life”) cannot be interpreted by Exynap, you can press “Ctrl + Enter” to trigger a Google search.
+             <p>If your command (e.g. “calculate the answer of life”) cannot be interpreted by Exynap, you can press “<span class="actionShortcut">Ctrl</span> + Enter” to trigger a Google search.
              
              Exynap helps you in implementing code based on the Android platform API only. External libraries and the "core" Java API are not supported yet.<br \>
-             <u>Note:</u> You can always undo a code insertion by using the regular undo shortcut (Ctrl + Z)</p>
+             <u>Note:</u> You can always undo a code insertion by using the regular undo shortcut (<span class="actionShortcut">Ctrl</span> + Z)</p>
             </section>						
           </div>					
         </div>                        
@@ -169,20 +181,18 @@ If the inserted code needs further input, Exynap will automatically place the cu
 												</tr>
 											</thead>
 											<tbody>
+                      	<tr>
+													<td><a href="https://plus.google.com/+AndreasSchrade/posts/AdqDrguNuJ6">bind view</a></td>
+													<td>Binds the selected XML layout file (either native Android binding or via Butterknife)</td>
+												</tr>
 												<tr>
 													<td>create alert dialog</td>
 													<td>Creates a new AlertDialog</td>
 												</tr>
 												<tr>
 													<td>convert px into dp</td>
-													<td>Converts a pixel value into dp value</td>
-					
-												</tr>
-												<tr>
-													<td>bind view</td>
-													<td>Binds the selected XML layout file (either native Android binding or via Butterknife)</td>
-										
-												</tr>
+													<td>Converts a pixel value into dp value</td>				
+												</tr>									
 												<tr>
 													<td>hide keyboard</td>
 													<td>Hides an open keyboard</td>
@@ -237,7 +247,7 @@ If the inserted code needs further input, Exynap will automatically place the cu
             <section class="box">
             <h3 id="about">About</h3>							 										 										 											           
              <p>Exynap has a vision to make software development easier and faster than it is presently. It has been developed by <a href="https://twitter.com/andreasschrade">Andreas Schrade</a>, an Android, A.I., smart technology and minimalism loving guy.</p>
-             <p>The next big release of Exynap will contain the flux capacitor module which will exponentially boost your experience of Exynap. Hence, stay tuned and follow its progress.</p>
+             <p>The next big release of Exynap will contain the <a href="http://backtothefuture.wikia.com/wiki/Flux_capacitor">flux capacitor</a> module which will exponentially boost your experience of Exynap. Hence, stay tuned and follow its progress.</p>
             </section>						
           </div>
         </div>	
