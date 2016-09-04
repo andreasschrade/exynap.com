@@ -18,8 +18,7 @@
     <link rel="image_src" href="/images/logo.png" / >
      <meta property='og:image' content='http://exynap.com/images/logo.png'/>
     <script src="https://code.jquery.com/jquery-3.1.0.min.js" type="text/javascript"></script>
-           
-            
+    <script src="assets/js/jquery.lazyload.min.js"></script>
     <script type="text/javascript">
  
  $(document).on('click', '#more', function(event){
@@ -29,6 +28,9 @@
         scrollTop:  $("#main").offset().top
     }, 500);
 });
+ 
+
+
  
 document.addEventListener("DOMContentLoaded", function(event) {
  var isMac = navigator.platform.toUpperCase().indexOf('MAC')>=0;
@@ -156,11 +158,23 @@ document.addEventListener("DOMContentLoaded", function(event) {
              There are only two cases when Exynap does not require a new line:
              <br \><u>Case #1:</u> When the selected variable is to be used for instance method calls.</i>.	
              <span class="image fit">
-            <img src="images/anim03.gif" alt="" />    </p>	
+            
+                      
+            <img class="lazy" data-original="images/anim03.gif">
+<noscript>
+    <img src="images/anim03.gif" alt="" />
+</noscript>
+               
+             </p>	
           </span>				
              <p><u>Case #2:</u> When the evaluated result of Exynap needs to be assigned to a variable.</i>
              <span class="image fit">
-            <img src="images/anim04.gif" alt="" />
+                              
+            <img class="lazy" data-original="images/anim04.gif">
+<noscript>
+    <img src="images/anim04.gif" alt="" />
+</noscript>
+            
           </span>	</p>
              <p><b>In every other case, the cursor should be placed at the start of a new line. However, a future release will add support for code insertion inside existing statements too.<br \><br \>
 If the inserted code needs further input, Exynap will automatically place the cursor at the position that requires your input. Just type the value you want and press “Tab”. You can also press “Esc” if you do not want to fill the placeholders at that point of time. (Same behaviour as Intellij Live Templates)</p>							                 								
@@ -264,7 +278,11 @@ If the inserted code needs further input, Exynap will automatically place the cu
               
               
                           <span class="image featured">
-            <img src="images/anim05.gif" alt="" />
+            
+            <img class="lazy" data-original="images/anim05.gif">
+<noscript>
+    <img src="images/anim05.gif" alt="" />
+</noscript>
           </span>		
              </section>						
           </div>					
@@ -287,7 +305,7 @@ If the inserted code needs further input, Exynap will automatically place the cu
             <!-- Lists -->								
             <section class="box">
             <h3 id="spread-the-word">Spread the Word</h3>							 										 										 											           
-             <p>Exynap gets automatically better the more people use it - so spread the word ☺</p>
+             <p>Exynap gets automatically better the more people use it - so please spread the word. Thanks ☺</p>
           <ul class="rrssb-buttons clearfix">
   <li class="rrssb-email">
     <!-- Replace subject with your message using URL Endocding: http://meyerweb.com/eric/tools/dencoder/ -->
@@ -365,15 +383,23 @@ If the inserted code needs further input, Exynap will automatically place the cu
       </footer>		
     </div>		
     <!-- Scripts -->			
-<script src="assets/js/jquery.min.js"></script>			
+<!--<script src="assets/js/jquery.min.js"></script>-->			
 <script src="assets/js/jquery.dropotron.min.js"></script>			
 <script src="assets/js/jquery.scrollgress.min.js"></script>			
 <script src="assets/js/skel.min.js"></script>			
 <script src="assets/js/util.js"></script>			
     <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->			
 <script src="assets/js/main.js"></script>	
-<script src="js/rrssb.min.js"></script>
+<script src="assets/js/rrssb.min.js"></script>
 
+<script type="text/javascript">
+ $("img.lazy").lazyload({
+  threshold : 200
+ 
+});
+
+</script>
+ 
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
